@@ -1,0 +1,93 @@
+/* @font-face {
+    font-family: 'segment';
+    src: url() format("truetype");
+} */
+
+body, h2, h3, h4, p {
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+#app {
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 2rem;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.score-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'segment'; */
+    background-color: rgb(41, 41, 41);
+    color: rgb(170, 1, 1);
+    padding: .5rem;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+.score {
+    text-align: center;
+    font-size: 4rem;
+    width: 100%;
+    padding-top: .35em;
+}
+
+button {
+    padding: .5rem .75rem;
+}
+
+#game-info {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+#period-el {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    gap: 1rem;
+}
+
+#fouls-el {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#fouls-values {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#game-controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}

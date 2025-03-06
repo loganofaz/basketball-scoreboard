@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="app">
+        <section id="scoreboard">
+            <div id="home" class="score-column">
+                <h2>HOME</h2>
+                <p id="home-score" class="score screen">0</p>
+                <div id="home-controls" class="score-controls">
+                    <button data-team="home" data-increment="1">+1</button>
+                    <button data-team="home" data-increment="2">+2</button>
+                    <button data-team="home" data-increment="3">+3</button>
+                </div>
+            </div>
+            <div id="away" class="score-column">
+                <h2>AWAY</h2>
+                <p id="away-score" class="score screen">0</p>
+                <div id="away-controls" class="score-controls">
+                    <button data-team="away" data-increment="1">+1</button>
+                    <button data-team="away" data-increment="2">+2</button>
+                    <button data-team="away" data-increment="3">+3</button>
+                </div>
+            </div>
+        </section>
+        <section id="game-info">
+            <div id="period-el">
+                <h3>Period</h3>
+                <p id="period-value" class="game-info-value screen">1</p>
+            </div>
+            <div id="fouls-el">
+                <h3>FOULS</h3>
+                <div id="fouls-values">
+                    <h4>HOME</h4>
+                    <div id="home-fouls" class="game-info-value screen">0</div>
+                    <div id="away-fouls" class="game-info-value screen">0</div>
+                    <h4>AWAY</h4>
+                </div>
+            </div>
+        </section>
+        <section id="game-controls">
+            <button id="period-1">Next Period</button>
+            <button id="home-fouls-1" data-team="home" data-increment="1">Home Foul</button>
+            <button id="away-fouls-1" data-team="away" data-increment="1">Away Foul</button>
+            <button id="reset">Reset</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
